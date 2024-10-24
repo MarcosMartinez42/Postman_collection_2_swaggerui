@@ -1,0 +1,12 @@
+Aclaración:
+
+En el ejercicio se me pidió que usara Rest Assured, RestSharp, Axios, PyTest o Playwright, pero envío el ejercicio en una collection de Postman ya que no manejo las herramientas mencionadas anteriormente.
+
+Guía:
+
+En la collection hay dos carpetas (Parte_1 y Parte_2). En la primera parte se crean todas las mascotas solicitadas y también se obtiene información de la mascota con ID 10 por ID y también por status. Cabe aclarar que en el sistema hay miles de mascotas, por lo que cuando filtramos por status es posible que nos devuelva más mascotas. 
+En la segunda parte se obtiene una lista de las mascotas del sistema con status available, se seleccionan cinco de ellas y se manda su información a un array que se guarda como variante global, llamada "arraymascotas". Posteriormente, mediante un pre-request script se recorren los datos de las mascotas guardadas en la variante usando un bucle for, y así se manda un request para mandar una orden por cada mascota.
+
+Se agregaron pruebas básicas (código 200 y response time menor a 200ms) a la collection, por lo que se ejecutan con cada request. Además, al request final (enviar una orden para cada una de las mascotas seleccionadas) se le agregó un console log para evidenciar si la orden pudo ser creada o no. 
+
+Para ejecutar la collection, debemos importarla a nuestro cliente de Postman, hacer tap con el clic derecho sobre la collection y hacer clic en "Run collection"
